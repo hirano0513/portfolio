@@ -1,6 +1,12 @@
 # capistranoのバージョンを記載。固定のバージョンを利用し続け、バージョン変更によるトラブルを防止する
 lock '3.11.0'
 
+# Basic認証の環境変数を指定
+set :default_env, {
+  BASIC_AUTH_USER: ENV["BASIC_AUTH_USER"],
+  BASIC_AUTH_PASSWORD: ENV["BASIC_AUTH_PASSWORD"]
+}
+
 # Capistranoのログの表示に利用する
 set :application, 'portfolio'
 
