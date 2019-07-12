@@ -1,0 +1,30 @@
+.toppage
+  .side-contents
+    %ul.side-contents__list
+      %li.side-contents__title
+        = link_to "おみくじルーレット", "/"
+      %li.side-contents__title
+        = link_to "bbb", "/"
+
+  .main-content
+    %h1.game__title おみくじルーレット
+    .description
+      %p.description__text 説明：クリックするとおみくじルーレットが回転する。
+    %iframe.game__main(src="https://web.editey.com/11LyiaZZHmKGJdOkRuzu2tM5ZY8_X9NNd/index.html" width="100%" height="600")
+    .under-wrapper
+      .article-box
+        %h3.article-box__head  参考書籍
+        .book__thumbnail
+          = link_to image_tag(src="https://www.sbcr.jp/wp-content/uploads/product/4815602543-464x596.png", width: '187', height: '247'),"https://www.sbcr.jp/product/4815602543/"
+        .book-overview
+          .block-title
+            %h3
+              =link_to "Unityの教科書 Unity2019完全対応版" ,"https://www.sbcr.jp/product/4815602543/"
+          .block-day
+            %p 発売日：2019年06月28日（金）
+            %p 著者名：荒川 巧也、浅野 祐一
+      .remarks-box
+        .remarks-box__title 書籍からの変更点:
+        %pre.remarks-box__text
+          特になし
+          ああああ
