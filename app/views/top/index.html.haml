@@ -1,30 +1,25 @@
 .toppage
-  .side-contents
-    %ul.side-contents__list
-      %li.side-contents__title
-        = link_to "おみくじルーレット", "/"
-      %li.side-contents__title
-        = link_to "bbb", "/"
-
+  = render 'side_contents'
   .main-content
-    %h1.game__title おみくじルーレット
+    %h1.game__title すしゲットゲーム
     .description
-      %p.description__text 説明：クリックするとおみくじルーレットが回転する。
-    %iframe.game__main(src="https://web.editey.com/1gJpoi1kFPv9gJJWS6abmJ0KWOkMBB121/index.html" width="100%" height="600")
+      %pre.description__text
+        説明：アローキー左右で移動。シフトキーでジャンプ。
+        　　   すしオブジェクトを10個取るとクリア。亡者に当たるとゲームオーバー。
+    %iframe.game__main(src="https://web.editey.com/1AF6DkvZdG8sZ6espIiNrxdFh-3NpzyHm/index.html" width="100%" height="600")
     .under-wrapper
       .article-box
         %h3.article-box__head  参考書籍
         .book__thumbnail
-          = link_to image_tag(src="https://www.sbcr.jp/wp-content/uploads/product/4815602543-464x596.png", width: '187', height: '247'),"https://www.sbcr.jp/product/4815602543/"
+          = link_to image_tag(src="https://book.mynavi.jp/files/topics/101848_ext_06_0.jpg", width: '187', height: '247'),"https://book.mynavi.jp/ec/products/detail/id=101848"
         .book-overview
           .block-title
             %h3
-              =link_to "Unityの教科書 Unity2019完全対応版" ,"https://www.sbcr.jp/product/4815602543/"
+              =link_to "楽しく学ぶ　Unity2D超入門講座" ,"https://book.mynavi.jp/ec/products/detail/id=101848"
           .block-day
-            %p 発売日：2019年06月28日（金）
-            %p 著者名：荒川 巧也、浅野 祐一
+            %p 発売日：2019年02月21日
+            %p 著者名：森 巧尚
       .remarks-box
         .remarks-box__title 書籍からの変更点:
         %pre.remarks-box__text
           特になし
-          ああああ
