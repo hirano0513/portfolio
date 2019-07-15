@@ -9,4 +9,7 @@ class TopController < ApplicationController
   def swipe_car
   end
 
+  def cat_escape
+  end
+
 end
