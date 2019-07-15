@@ -12,4 +12,7 @@ class TopController < ApplicationController
   def cat_escape
   end
 
+  def climb_cloud
+  end
+
 end
